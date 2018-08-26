@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v12/u-4x0qWljRw-Pd8w__0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+header h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    display: block;
+    background-color: cornflowerblue;
+    padding: 20px;
+}
+h2 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    color: #7474d3;
+    padding-top: 100px;
+}
+
+main{
+    display:grid;
+    grid-template-rows: auto;
+     grid-template-columns: auto;
+    
+}
+
+.grid {
+    padding-top: 150px;
+    width: 1000px;
+    height: 3000px;
+    margin: auto; 
+    grid-template: repeat(3 500px) / repeat(;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.flaria {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sunflower {
+    grid-area: 2 / 2 / 3 / 3;
+}
+.pencillyra {
+    grid-area: 3 / 3 / 4 / 4;
+}
