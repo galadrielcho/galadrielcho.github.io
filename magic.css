@@ -25,10 +25,43 @@ img{
     width: 40%;
 }
 body h1 {
-    color: #7474d3;
+    color: #fff;
     font-family: 'Cabin', sans-serif;
+    top: 20px;
+    right: 400px;
+    display: inline-block;
+    font-size: 100px;
+    
 }
 
 body {
     margin:30px;
 }
+
+.grid {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(8, 200px);
+  grid-template-rows: repeat(8, 150px);
+  grid-gap: 10px 15px;
+}
+
+
+.paintedflowers {
+    grid-area: 1 / 1 / span 4 /span 3;
+    background-color: dodgerblue;
+}
+.paintedflowers img {
+    width: 630px;
+    height: 630px;
+   
+}
+.heading {
+    grid-area: 1 / 4 / 1 / span 3;
+    background-color:#7474d3;
+}
+.heading h1 {
+    justify-self: center;
+}
+
