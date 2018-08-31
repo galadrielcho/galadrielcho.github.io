@@ -28,14 +28,14 @@ body h1 {
     color: #fff;
     font-family: 'Cabin', sans-serif;
     top: 20px;
-    right: 400px;
+    right: 400px;0
     display: inline-block;
     font-size: 100px;
     
 }
 
 body {
-    margin:30px;
+    margin:50px;
 }
 
 .grid {
@@ -44,7 +44,7 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 200px);
   grid-template-rows: repeat(8, 150px);
-  grid-gap: 10px 15px;
+  grid-gap: 30px 50px;
 }
 
 
@@ -53,15 +53,39 @@ body {
     background-color: dodgerblue;
 }
 .paintedflowers img {
-    width: 630px;
-    height: 630px;
+    width: 700px;
+    height: 700px;
    
 }
 .heading {
     grid-area: 1 / 4 / span 1 / span 3;
     font-family: 'Cabin', sans-serif;    
     font-size: 100px;
+    color:#7474d3;
+    text-align: center;
+    justify-content: center;
+    border: 10px solid #7474d3;
 
-    background-color: #7474d3;
-    
 }
+
+.welcome {
+    grid-area: 2 / 4 / span 1/ span 3;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;    
+    font-size: 32px;
+    color:#7474d3;
+}
+
+.bio{
+    grid-area: 1/ 7 / span 2 /span 1;
+   border: 10px solid #7474d3;
+    width:285px;
+}
+.a {
+    grid-area: 3/ 7 / span 2 /span 1;
+   border: 10px solid #7474d3;
+    width:285px;
+}
+
+
+
