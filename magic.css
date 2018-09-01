@@ -82,10 +82,21 @@ body {
     width:285px;
 }
 .a {
-    grid-area: 3/ 7 / span 2 /span 1;
+    grid-area: 1/ 7 / span 1 /span 1;
    border: 10px solid #7474d3;
+    background-color: #7474d3;
+    height:0px;
     width:285px;
 }
 
+li button {
+    color: #fff;
+    background: none;
+    border: none;
+      font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display:inline-block;
+}
 
 
