@@ -7,8 +7,9 @@
 </head>
 <header> 
     <ul>
-        <li><button type="button">gallery</button>
-</li><li><button type="button">writings</button></li><li><button type="button">about me</button></li><li><button type="button">contact</button></li>
+        
+        <li> <button id="gbutton" onmouseover="changeButtonText()" >gallery</button></li>
+        <li><button onclick="myFunction()">writings</button></li><li><button onclick="myFunction">about me</button></li><li><button onclick="myFunction()">contact</button></li>
     </ul>
     </header>
 <body>
@@ -20,6 +21,14 @@
         <div class= "bio">a</div>
         <div class= "a">b</div>
     </div>
-</body>
     
+<script>
+function changeButtonText() {
+ if (event=onmouseover){
+    document.getElementById("demo").style.color = "red";
+ } else if (event=== onmouseout) {
+    document.getElementById("demo").style.color = "white";
+
+}
+</script>
     
