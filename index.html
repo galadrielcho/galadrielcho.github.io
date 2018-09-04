@@ -5,11 +5,15 @@
 <head>
     <title>doodle haven</title>
 </head>
+    
 <header> 
+    
     <ul>
         
-        <li> <button id="gbutton" onmouseover="changeButtonText()" >gallery</button></li>
-        <li><button onclick="myFunction()">writings</button></li><li><button onclick="myFunction">about me</button></li><li><button onclick="myFunction()">contact</button></li>
+        <li><button type= "button" id='gallery' onmouseover="document.getElementById('gallery').style.color ='#cdcdcd'" onmouseout="document.getElementById('gallery').style.color ='white'">gallery</button></li>
+        <li><button type= "button" id='writings' onmouseover="document.getElementById('writings').style.color ='#cdcdcd'" onmouseout="document.getElementById('writings').style.color ='white'">writings</button></li>
+        <li><button type= "button" id='aboutme' onmouseover="document.getElementById('aboutme').style.color ='#cdcdcd'" onmouseout="document.getElementById('aboutme').style.color ='white'">about me</button></li>
+        <li><button type= "button" id='contact' onmouseover="document.getElementById('contact').style.color ='#cdcdcd'" onmouseout="document.getElementById('contact').style.color ='white'">contact</button></li>
     </ul>
     </header>
 <body>
@@ -23,12 +27,8 @@
     </div>
     
 <script>
-function changeButtonText() {
- if (event=onmouseover){
-    document.getElementById("demo").style.color = "red";
- } else if (event=== onmouseout) {
-    document.getElementById("demo").style.color = "white";
-
+function showButtonBorder() {
+    
 }
 </script>
     

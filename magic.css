@@ -97,6 +97,8 @@ li button {
     font-size: 30px;
     color: #fff;
     display:inline-block;
+    transition: .5s;
 }
+
 
 
