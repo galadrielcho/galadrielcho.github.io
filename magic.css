@@ -10,6 +10,7 @@ header{
     width: 100%;
     background-color: #7474d3;
 
+
 }
 
 header li {
@@ -18,19 +19,35 @@ header li {
     color: #fff;
     display:inline-block;
     padding: 20px;
+    background-color: #7474d3;
+    margin: 0;
+    font-weight: 200;
 }
+.heading {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display:inline-block;
+    padding: 20px;
+    background-color: #7474d3;
+    margin: 10px;
+    font-weight: 200;
+    border: 5px solid #fff;
+
+}
+
 
 img{
     display: inline-block;
-    width: 40%;
+    width: 8fr;
 }
-body h1 {
+header h1 {
     color: #fff;
     font-family: 'Cabin', sans-serif;
-    top: 20px;
     right: 400px;0
     display: inline-block;
     font-size: 100px;
+    margin: 0;
     
 }
 
@@ -39,33 +56,22 @@ body {
 }
 
 .grid {
-  height: 500px;
-  width: 500px;
+
   display: grid;
-  grid-template-columns: repeat(8, 200px);
-  grid-template-rows: repeat(8, 150px);
+  grid-template-columns: repeat(8, 5fr);
+  grid-template-rows: repeat(8, 4fr);
   grid-gap: 30px 50px;
 }
 
 
 .paintedflowers {
-    grid-area: 1 / 1 / span 4 /span 3;
+    grid-area: 1 / 1 / span 2 /span 4;
     background-color: dodgerblue;
 }
 .paintedflowers img {
     width: 700px;
     height: 700px;
    
-}
-.heading {
-    grid-area: 1 / 4 / span 1 / span 3;
-    font-family: 'Cabin', sans-serif;    
-    font-size: 100px;
-    color:#7474d3;
-    text-align: center;
-    justify-content: center;
-    border: 10px solid #7474d3;
-
 }
 
 .welcome {
