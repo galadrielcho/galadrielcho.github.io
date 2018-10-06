@@ -6,10 +6,13 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+html, body {
+ margin: 0;
+}
 header{
     width: 100%;
-    background-color: #7474d3;
-
+    background-color: #002e7a;
+    margin: 0;
 
 }
 
@@ -19,81 +22,19 @@ header li {
     color: #fff;
     display:inline-block;
     padding: 20px;
-    background-color: #7474d3;
     margin: 0;
     font-weight: 200;
+    background-color: #002e7a;
 }
 .heading {
-    font-family: 'Cabin', sans-serif;
-    font-size: 30px;
-    color: #fff;
-    display:inline-block;
     padding: 20px;
-    background-color: #7474d3;
-    margin: 10px;
+    margin:10px;
+    background-color: #002e7;
     font-weight: 200;
     border: 5px solid #fff;
 
 }
 
-
-img{
-    display: inline-block;
-    width: 8fr;
-}
-header h1 {
-    color: #fff;
-    font-family: 'Cabin', sans-serif;
-    right: 400px;0
-    display: inline-block;
-    font-size: 100px;
-    margin: 0;
-    
-}
-
-body {
-    margin:50px;
-}
-
-.grid {
-
-  display: grid;
-  grid-template-columns: repeat(8, 5fr);
-  grid-template-rows: repeat(8, 4fr);
-  grid-gap: 30px 50px;
-}
-
-
-.paintedflowers {
-    grid-area: 1 / 1 / span 2 /span 4;
-    background-color: dodgerblue;
-}
-.paintedflowers img {
-    width: 700px;
-    height: 700px;
-   
-}
-
-.welcome {
-    grid-area: 2 / 4 / span 1/ span 3;
-    text-align: center;
-    font-family: 'Cabin', sans-serif;    
-    font-size: 32px;
-    color:#7474d3;
-}
-
-.bio{
-    grid-area: 1/ 7 / span 2 /span 1;
-   border: 10px solid #7474d3;
-    width:285px;
-}
-.a {
-    grid-area: 1/ 7 / span 1 /span 1;
-   border: 10px solid #7474d3;
-    background-color: #7474d3;
-    height:0px;
-    width:285px;
-}
 
 li button {
     color: #fff;
@@ -106,5 +47,6 @@ li button {
     transition: .5s;
 }
 
-
-
+#jinnie {
+    width: 100%;
+}
