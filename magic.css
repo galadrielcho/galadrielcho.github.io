@@ -6,17 +6,17 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-title{
-    transition: 
-}
-html, body {
+html, body, head {
  margin: 0;
+}
+
+body {
+    background-image: url(seaofstars-bygaladrielcho-2018-redraw2.png)
 }
 header{
     width: 100%;
-    background-color: #002e7a;
+    background-color: rgba(35, 35, 76, 0.83);
     margin: 0;
-
 }
 
 header li {
@@ -27,12 +27,11 @@ header li {
     padding: 20px;
     margin: 0;
     font-weight: 200;
-    background-color: #002e7a;
+    background-color: rgba(35, 35, 76, 0.83);
 }
 .heading {
-    padding: 20px;
     margin:10px;
-    background-color: #002e7;
+    background-color: rgba(35, 35, 76, 0.83)
     font-weight: 200;
     border: 5px solid #fff;
 
@@ -47,20 +46,22 @@ li button {
     font-size: 30px;
     color: #fff;
     display:inline-block;
-    transition: .5s;
+    transition: .5s ease-in-out;
+    text-decoration: none;
+    position: relative
+
 }
 
 li button:hover { 
     text-decoration: underline;
     transition: .5s;
+    transform: scaleX(1);
 }
 
-#seaofstars {
-    width: 100%;
+li button:before {
     position: absolute;
-    z-index: -100;
-    height:800px;
 }
+
 
 
 h1 {
@@ -69,8 +70,21 @@ h1 {
     font-family: 'Cabin', sans-serif;
     font-size: 60px;
     color: #fff;
+    padding: 50px;
     text-align: center;
 }
 #smol {
     font-size:20px;
+    padding: 50px;
+
+}
+
+.bigwords {
+    position: relative;
+    top: 300px;
+    padding: 50px;
+    background-color: rgba(35, 35, 76, 0.83);
+        border: 5px solid rgba(35, 35, 76);
+
+
 }
