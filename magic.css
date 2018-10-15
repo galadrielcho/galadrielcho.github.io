@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Cabin';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v12/u-4x0qWljRw-Pd8w__0.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -11,12 +11,16 @@ html, body, head {
 }
 
 body {
-    background-image: url(seaofstars-bygaladrielcho-2018-redraw2.png)
+    background-image: url(seaofstars-bygaladrielcho-2018-redraw2.png);
+    padding:0;
+    margin: 0;
+
 }
 header{
     width: 100%;
     background-color: rgba(35, 35, 76, 0.83);
     margin: 0;
+    padding: 0;
 }
 
 header li {
@@ -62,8 +66,6 @@ li button:before {
     position: absolute;
 }
 
-
-
 h1 {
     z-index: 5;
     color:  white;
@@ -72,19 +74,29 @@ h1 {
     color: #fff;
     padding: 50px;
     text-align: center;
+    width: 30%;
+    margin: auto;
+
 }
 #smol {
     font-size:20px;
-    padding: 50px;
-
+    padding: 20px;
+    width: 15%;
+    margin: auto;
+    transition: .5s;
 }
 
 .bigwords {
     position: relative;
     top: 300px;
     padding: 50px;
-    background-color: rgba(35, 35, 76, 0.83);
-        border: 5px solid rgba(35, 35, 76);
+    border: 6px solid #fff;
+    background-color: rgba(35, 35, 76, 0.1);
+}
 
-
+p {
+    display: block;
+    position: absolute;
+    top: 1100px;;
+    color: white;
 }
