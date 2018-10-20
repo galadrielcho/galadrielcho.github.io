@@ -21,7 +21,13 @@ header{
     background-color: rgba(35, 35, 76, 0.83);
     margin: 0;
     padding: 0;
+    position:fixed;
+    top: 0;
+    width:100%;
+
 }
+
+
 
 header li {
     font-family: 'Cabin', sans-serif;
