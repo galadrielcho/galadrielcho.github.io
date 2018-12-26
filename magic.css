@@ -12,13 +12,16 @@ html, body, head {
 
 body {
     background-image: url(seaofstars-bygaladrielcho-2018-redraw2.png);
+    background-repeat: no-repeat;
+    background-color: #061e09;
     padding:0;
     margin: 0;
+    background-size: auto;
 
 }
 header{
     width: 100%;
-    background-color: rgba(35, 35, 76, 0.83);
+    background-color: rgba(35, 35, 76, 0.5);
     margin: 0;
     padding: 0;
     position:fixed;
@@ -34,14 +37,12 @@ header li {
     font-size: 30px;
     color: #fff;
     display:inline-block;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
     font-weight: 200;
-    background-color: rgba(35, 35, 76, 0.83);
 }
 .heading {
     margin:10px;
-    background-color: rgba(35, 35, 76, 0.83)
     font-weight: 200;
     border: 5px solid #fff;
 
@@ -56,20 +57,15 @@ li button {
     font-size: 30px;
     color: #fff;
     display:inline-block;
-    transition: .5s ease-in-out;
-    text-decoration: none;
-    position: relative
+    transition: .5s
 
 }
 
 li button:hover { 
-    text-decoration: underline;
-    transition: .5s;
+    color: #ffda77;
+    border-bottom: 3px solid #ffda77;
+    transform-origin: center;
     transform: scaleX(1);
-}
-
-li button:before {
-    position: absolute;
 }
 
 h1 {
@@ -105,4 +101,23 @@ p {
     position: absolute;
     top: 1100px;;
     color: white;
+}
+
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin: 10px;
+  vertical-align: middle;
+  width: 450px;
+    position: relative;
+  top: 550px;;
+ 
+}
+
+.row {
+  flex-wrap: wrap;
+  padding: 100px;
 }
