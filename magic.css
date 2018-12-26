@@ -142,3 +142,30 @@ p {
     left: 405px;
     bottom: 450px;
 }
+
+#cinfo {
+   display: block;
+    font-size: 20px;
+    text-align: left;
+    top:1650px;
+    left: 1100px;
+
+}
+.contactinfo {
+        text-align: left;
+    position: relative;
+    left: 405px;
+    bottom: 250px;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #ffda77;
+}
+
+a:hover {
+  color: #ffda77;
+}
