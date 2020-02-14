@@ -67,22 +67,35 @@ h1 {
 
 
 @-webkit-keyframes bounce {
-  0% { transform: translateY(0); }
-  30% { transform: translateY(-25px); }
-  50% { transform: translateY(0); }
-  100% { transform: translateY(0); }
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-25px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(0); }
 }
 
-.text {
-    display: block;
-    position: absolute;
+.box {
+    width: 30%;
+    border: .6em solid white;
+    padding: 3%;
     top: 25%;
-    justify-content: right;
-    overflow: wrap;
-    color: white;
+    right: 5%;
+    margin: 20px;
+    display: inline;
+    position: fixed;
+    border-color: white;
     font-family: 'Cabin', sans-serif;
-    word-wrap: break-word;
+    font-size: 30px;
+    color: #fff;
+    display:inline-block;
+    margin: 0;
+    font-weight: 200;
 
+
+    
+}
+.tools{
+    font-weight: bold;
+    font-size: 1.7em;
 }
 
 
@@ -93,13 +106,6 @@ a:link {
 a:hover {
   color: #ffcd29;
 }
-
-h1:hover {
-    animation: shake .5s;
-    animation-iteration-count: infinite;
-    color: #ffcd29;
-    border-color: #ffcd29;
-    background: rgba(255, 205, 41, 0.02);
 
 
 }
@@ -152,4 +158,11 @@ h1:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.box:hover{
+    background: rgba(000, 000, 000, 0.3);
+    border-color: #ffcd29;
+
+
 }
