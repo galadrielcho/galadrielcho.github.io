@@ -53,15 +53,9 @@ header li {
     border: 5px solid #fff;
 }
 
-h1 {
-    z-index: 5;
+.bio {
     color:  white;
     font-family: 'Cabin', sans-serif;
-    font-size: 60px;
-    color: #fff;
-    padding: 50px;
-    width: 30%;
-    margin: auto;
 
 }
 

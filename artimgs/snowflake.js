@@ -1,42 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link href="indexstyle.css" rel="stylesheet">
-    <script src="snowflake.js"></script>
-
-</head>
-<header id="header"> 
-    <nav>
-        <div class="navbar">
-            <a href="index.html"><li id="navheading_border" class= "navheading">galadriel cho</li></a>
-            <a href="art.html"><li class= "navheading" >art</li></a>
-            <a href="https://github.com/galadrielcho" target="_blank"><li class= "navheading">code</li></a>
-            <a href="about.html"><li class = "navheading">about</li></a>
-        </div>
-    </nav>
-    </header>
-
-    <body>
-
-    <h1 id="bigger" class="words" onmouseover="document.getElementById('bigger').style.color ='#ffcd29'" onmouseout="document.getElementById('bigger').style.color ='white'">art and code by galadriel cho</h1>
-
-    <h1 id="welcome" class= "words">Welcome!</h1>
-    <div id="snowflakeContainer">
-    <span class="snowflake"></span>
-    <script>
   var snowflakes = [];
 
   var browserWidth;
   var browserHeight;
 
-  var numberOfSnowflakes = 75;
+  var numberOfSnowflakes = 50;
 
   var resetPosition = false;
 
   var enableAnimations = false;
   var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
 
-  function setAccessibilityState() {
+=  function setAccessibilityState() {
     if (reduceMotionQuery.matches) {
       enableAnimations = false;
     } else { 
@@ -62,60 +36,44 @@
     this.xPos = xPos;
     this.yPos = yPos;
     this.scale = 1;
-
     this.counter = 0;
     this.sign = Math.random() < 0.5 ? 1 : -1;
-
     this.element.style.opacity = (.1 + Math.random()) / 3;
   }
-
 
   Snowflake.prototype.update = function () {
     this.counter += this.speed / 5000;
     this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
     this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
     this.scale = .5 + Math.abs(10 * Math.cos(this.counter) / 20);
-
     setTransform(Math.round(this.xPos), Math.round(this.yPos), this.scale, this.element);
-
     if (this.yPos > browserHeight) {
       this.yPos = -50;
     }
   }
 
-
   function setTransform(xPos, yPos, scale, el) {
     el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0) scale(${scale}, ${scale})`;
   }
 
-
   function generateSnowflakes() {
-
     var originalSnowflake = document.querySelector(".snowflake");
-
     var snowflakeContainer = originalSnowflake.parentNode;
     snowflakeContainer.style.display = "block";
-
     browserWidth = document.documentElement.clientWidth;
     browserHeight = document.documentElement.clientHeight;
-
     for (var i = 0; i < numberOfSnowflakes; i++) {
-
       var snowflakeClone = originalSnowflake.cloneNode(true);
       snowflakeContainer.appendChild(snowflakeClone);
-
       var initialXPos = getPosition(50, browserWidth);
       var initialYPos = getPosition(50, browserHeight);
       var speed = 5 + Math.random() * 40;
-
       var snowflakeObject = new Snowflake(snowflakeClone,
         speed,
         initialXPos,
         initialYPos);
       snowflakes.push(snowflakeObject);
-    }
-
-    snowflakeContainer.removeChild(originalSnowflake);
+    }    snowflakeContainer.removeChild(originalSnowflake);
 
     moveSnowflakes();
   }
@@ -128,7 +86,6 @@
         snowflake.update();
       }      
     }
-
     if (resetPosition) {
       browserWidth = document.documentElement.clientWidth;
       browserHeight = document.documentElement.clientHeight;
@@ -153,4 +110,4 @@
   function setResetFlag(e) {
     resetPosition = true;
   }
-</script>
+
