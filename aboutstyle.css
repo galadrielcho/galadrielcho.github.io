@@ -57,14 +57,36 @@ section {
     color:  white;
     font-family: 'Cabin', sans-serif;
     position: absolute;
-    font-size: 2em;
-    background: rgba(000, 000, 000, 0.7)
+    font-size: 1.6em;
+    background-color: rgba(000, 000, 000, .7);
+    color: #fff;
+    margin-left: 5%;
+    margin-top: 1%;
+    padding:1%;
+    top: 35%;
+    width: 43%;
+    height: 42%;
+
 }
 
-.bio{
-    padding: 2%;   
-    top:25%
-    
+img {
+    position: absolute;
+    top:25%;
+    right:10%;
+    width: 25%;
+}
+
+h1 {
+    z-index: 5;
+    color:  white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 4em;
+    color: #fff;
+    padding-left: 5%;
+    margin: auto;
+    position: absolute;
+    top: 25%;
+
 }
 
 
@@ -110,6 +132,14 @@ a:hover {
 }
 
 .navheading:hover{
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+    color: #ffcd29;
+    border-color: #ffcd29;
+
+}
+
+h1:hover{
     animation: shake .5s;
     animation-iteration-count: infinite;
     color: #ffcd29;
