@@ -35,6 +35,7 @@ header{
 
 header li {
     font-family: 'Cabin', sans-serif;
+    font-size: 30px;
     color: #fff;
     display:inline-block;
     margin: 0;
@@ -84,12 +85,16 @@ h1 {
     position: fixed;
     border-color: white;
     font-family: 'Cabin', sans-serif;
-    font-size:2.5vw;
+    font-size:30px;
     color: #fff;
     display:inline-block;
     margin: 0;
     font-weight: 200;
     transition: 1s;
+}
+#description{
+    font-size:7.5vw;
+}
 
 
     
