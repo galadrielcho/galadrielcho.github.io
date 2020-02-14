@@ -53,25 +53,6 @@ header li {
     border: 5px solid #fff;
 }
 
-button {
-    color: #fff;
-    background: none;
-    border: none;
-    font-family: 'Cabin', sans-serif;
-    font-size: 29%;
-    color: #fff;
-    display:inline-block;
-    transition: .5s
-
-}
-
-button:hover { 
-    color: #ffda77;
-    border-bottom: 3px solid #ffda77;
-    transform-origin: center;
-    transform: scaleX(1);
-}
-
 h1 {
     z-index: 5;
     color:  white;
@@ -124,20 +105,6 @@ h1 {
     size = 20%;
 
 }
-.menu {
-    margin:10px;
-    font-weight: 200;
-    display: inline-block;
-
-}
-
-.menu:hover .menu-dropdown {display: block;}
-
-.menu-dropdown {
-    position: relative;
-    font-size = 10%;
-
-}
 
 pg {
     display: block;
@@ -158,12 +125,6 @@ pg {
     font-size: 1.5em;
 }
 
-.menu {
-    margin-top: 0;
-    position: relative;
-    font-size:100p;
-}
-
 
 
 a:link {
@@ -182,11 +143,22 @@ h1:hover {
     animation: shake .5s;
     animation-iteration-count: infinite;
     color: #ffcd29;
+    border-color: #ffcd29;
+    background: rgba(255, 205, 41, 0.02);
+
 
 }
 
 .navheading:hover{
-          color: #ffcd29;
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+    color: #ffcd29;
+    border-color: #ffcd29;
+
+}
+
+#navheading_border:hover{
+    border-color: #ffcd29;
 
 }
 

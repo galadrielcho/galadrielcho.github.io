@@ -31,15 +31,6 @@ header{
 
 }
 
-
-header li {
-    font-family: 'Cabin', sans-serif;
-    font-size: 30px;
-    color: #fff;
-    display:inline-block;
-    margin: 0;
-    font-weight: 200;
-}
 .navheading {
     margin:10px;
     font-weight: 200;
@@ -53,24 +44,6 @@ header li {
     border: 5px solid #fff;
 }
 
-button {
-    color: #fff;
-    background: none;
-    border: none;
-    font-family: 'Cabin', sans-serif;
-    font-size: 29%;
-    color: #fff;
-    display:inline-block;
-    transition: .5s
-
-}
-
-button:hover { 
-    color: #ffda77;
-    border-bottom: 3px solid #ffda77;
-    transform-origin: center;
-    transform: scaleX(1);
-}
 
 h1 {
     z-index: 5;
@@ -84,28 +57,6 @@ h1 {
 
 }
 
-#smaller {
-    font-size:100%;
-    padding: 2%;
-    width: 15%;
-    margin: auto;
-    transition: .5s;
-    text-align: center;
-    top: 40%;
-   
-
-}
-#bigger {
-    font-size:2.75em;
-    padding: 1%;
-    margin-top: 20%;
-    transition: .5s;
-    text-align: center;
-    -webkit-animation:bounce 3s infinite;
-
-   
-
-}
 
 @-webkit-keyframes bounce {
   0% { transform: translateY(0); }
@@ -124,20 +75,6 @@ h1 {
     size = 20%;
 
 }
-.menu {
-    margin:10px;
-    font-weight: 200;
-    display: inline-block;
-
-}
-
-.menu:hover .menu-dropdown {display: block;}
-
-.menu-dropdown {
-    position: relative;
-    font-size = 10%;
-
-}
 
 pg {
     display: block;
@@ -147,23 +84,6 @@ pg {
     font-family: 'Cabin', sans-serif;
 
 }
-
-
-#welcome {
-    border: none;
-    padding: 0;
-    font-size: 2em;
-    margin-top: 2%;
-    margin-bottom: 30%
-    font-size: 1.5em;
-}
-
-.menu {
-    margin-top: 0;
-    position: relative;
-    font-size:100p;
-}
-
 
 
 a:link {
@@ -186,8 +106,7 @@ h1:hover {
 }
 
 .navheading:hover{
-          color: #ffcd29;
-
+    color: #ffcd29;
 }
 
 
