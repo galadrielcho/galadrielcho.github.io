@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Cabin'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v12/u-4x0qWljRw-Pd8w__0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html, body, head {
+ margin: 0;
+}
+
+body {
+    background-image: url(seaofstars-bygaladrielcho-2018-redraw2.png);
+    background-repeat: no-repeat;
+    background-color: #061e09;
+    padding:0;
+    margin: 0;
+    background-size: cover;
+
+}
+header{
+    width: 100%;
+    background-color: rgba(35, 35, 76, 0.5);
+    margin: 0;
+    padding: 0;
+    position:fixed;
+    top: 0;
+    z-index: 100;
+    height: 13%;
+
+}
+
+
+header li {
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display:inline-block;
+    margin: 0;
+    font-weight: 200;
+}
+.navheading {
+    margin:10px;
+    font-weight: 200;
+    padding: 1%;
+    transition: .8s;
+    -webkit-animation:bounce 3s onmouseover;
+
+
+}
+#navheading_border {
+    border: 5px solid #fff;
+}
+
+h1 {
+    z-index: 5;
+    color:  white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    padding: 50px;
+    width: 30%;
+    margin: auto;
+
+}
+
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-25px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.box {
+    width: 30%;
+    border: 5px solid white;
+    padding: 3%;
+    top: 25%;
+    right: 5%;
+    margin: 20px;
+    display: inline;
+    position: fixed;
+    border-color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    display:inline-block;
+    margin: 0;
+    font-weight: 200;
+    transition: 1s;
+
+
+    
+}
+
+
+a:link {
+  color: #fff;
+}
+
+a:hover {
+  color: #ffcd29;
+}
+
+
+}
+
+.navheading:hover{
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+    color: #ffcd29;
+    border-color: #ffcd29;
+
+}
+
+#navheading_border:hover{
+    border-color: #ffcd29;
+
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.box:hover{
+    background: rgba(000, 000, 000, 0.3);
+    border-color: #ffcd29;
+
+
+}
+
+.navheading:hover{
+    animation: shake .5s;
+    animation-iteration-count: infinite;
+    color: #ffcd29;
+    border-color: #ffcd29;
+
+}
+
+#navheading_border:hover{
+    border-color: #ffcd29;
+
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
