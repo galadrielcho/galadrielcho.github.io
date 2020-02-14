@@ -84,7 +84,7 @@ h1 {
   100% { transform: translateY(0); }
 }
 
-.words {
+.tools {
     position: relative;
     top: 30%;
     padding: 10%;
@@ -92,13 +92,12 @@ h1 {
     text-align: center;
     font-size = 10%;
     size = 20%;
-
 }
 
 pg {
     display: block;
     position: absolute;
-    top: 75%;;
+    top: 10%;
     color: white;
     font-family: 'Cabin', sans-serif;
 

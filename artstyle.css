@@ -73,33 +73,21 @@ h1 {
   100% { transform: translateY(0); }
 }
 
-pg {
+.text {
     display: block;
     position: absolute;
-    top: 75%;;
+    top: 25%;
+    justify-content: right;
+    overflow: wrap;
     color: white;
     font-family: 'Cabin', sans-serif;
+    word-wrap: break-word;
 
 }
-
-
-#welcome {
-    border: none;
-    padding: 0;
-    font-size: 2em;
-    margin-top: 2%;
-    margin-bottom: 30%
-    font-size: 1.5em;
-}
-
 
 
 a:link {
   color: #fff;
-}
-
-a:visited {
-  color: #ffcd29;
 }
 
 a:hover {
@@ -151,35 +139,6 @@ h1:hover {
   width: 100%;
 }
 
-img {
-    object-fit: cover;
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.box1 {
-    grid-column: 1 / 2;
-    grid-row: 1;
-    background-color: yellow;
-}
-.box2 {
-    grid-column: 2 /3;
-    grid-row: 1;
-    background-color: yellow;
-
-}
-.box3 {
-    grid-column: 1 / 2;
-    grid-row: 2;
-    background-color: yellow;
-
-}
-.box4 {
-    grid-column: 2 / 3;
-    grid-row: 2;
-    background-color: yellow;
-}
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
