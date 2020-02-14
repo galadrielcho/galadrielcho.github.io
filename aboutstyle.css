@@ -57,7 +57,7 @@ section {
     color:  white;
     font-family: 'Cabin', sans-serif;
     position: absolute;
-    font-size: 1.6em;
+    font-size: 1.6vw;
     background-color: rgba(000, 000, 000, .7);
     color: #fff;
     margin-left: 5%;
@@ -80,7 +80,7 @@ h1 {
     z-index: 5;
     color:  white;
     font-family: 'Cabin', sans-serif;
-    font-size: 4em;
+    font-size: 4vw;
     color: #fff;
     padding-left: 5%;
     margin: auto;
